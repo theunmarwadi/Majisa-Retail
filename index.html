@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- VIEWPORT -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!--FONT AWESOME KIT-->
+    <script src="https://kit.fontawesome.com/ab3c76b67e.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONT FAMILY -->
+    <link href="https://fonts.googleapis.com/css?family=Akronim|Inter|Sen&display=swap" rel="stylesheet">
+    <title>MAJISA Super Market</title>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" type="text/css">
+    <!--MAJISAretail.css-->
+    <link rel="stylesheet" type="text/css" href="MAJISAretail.css">
+
+    <!--mrmedia.css-->
+    <link rel="stylesheet" type="text/css" href="mrmedia.css">
+
+<!-- 
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <div>
+        <div class="navbar-top pt-2 pb-2">
+
+            <div class="row titlerow">
+
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6 title-head">
+                    <a href="#" class="text-white"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        info@majisaretail.com
+                    </a>
+                    <a href="#" class="text-white"><i class="fa fa-phone" aria-hidden="true"></i> +91 98 7654 3210</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mrhead">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-6 col-md-2 order-1 order-md-1 order-xl-1 mrlogo">
+                        <div class="mrlogodiv">
+                            <h1 class="majisa-fs">MAJISA</h1>
+                            <h2 class="retail-center">Retail.</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-7 order-3 order-md-2 order-xl-2 mrsearch">
+                        <div class="input-group md-form form-sm form-2 pl-0">
+                            <input class="searchinput form-control my-0 py-1" type="text"
+                                placeholder="Aap Ko Kya Chahiye?" aria-label="Search">
+                            <div class="input-group-append">
+                                <a href="searchpage.html" class="searchref">
+                                <span class="searchbg input-group-text red" id="basic-text1">
+                                    <i class="fas fa-search text-grey" aria-hidden="true"></i> Search</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-3 col-6 order-2 order-md-3 order-xl-3 logindiv">
+                        <div><a class="loginbtn" href="login.html">Login</a></div>
+                        <div class="order-status">Order Status</div>
+                        <a href="cartpage.html" class="cart-nav">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="cart">Cart</span>
+                        </a>
+                        <!-- sign up Order Status cart -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbardiv" id="navbarNavDropdown">
+                <ul class="navbar-nav menu-list">
+                    <li class="nav-item hpgac">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown hpgac">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="grocery.html">Grocery</a>
+                            <a class="dropdown-item" href="fruitsvegies.html">Fruits & Vegetables</a>
+                            <a class="dropdown-item" href="dairybeverages.html">Diary $ Bevarages</a>
+                            <a class="dropdown-item" href="packagedfood.html">Packaged Food</a>
+                            <a class="dropdown-item" href="homekitchen.html">Home & Kitchen</a>
+                            <a class="dropdown-item" href="personalcare.html">Personal Care</a>
+                            <a class="dropdown-item" href="appliances.html">Appliances</a>
+                            <a class="dropdown-item" href="stationary.html">Stationary</a>
+                            <a class="dropdown-item" href="beautyproducts.html">Beauty Products</a>
+                            <a class="dropdown-item" href="poojaitems.html">Pooja Items</a>
+                            <a class="dropdown-item" href="specials.html">Specials</a>
+                        </div>
+                    </li>
+                    <li class="nav-item hpgac">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item hpgac">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item hpgac">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 carousel-image"
+                        src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+                        alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carousel-image"
+                        src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+                        alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carousel-image"
+                        src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <h2 class="some-offer">SUNDAY OFFER</h2>
+
+        <div id="carouselExampleControl" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carou-divimage">
+                        <img class="d-block w-100"
+                            src="https://img.dmart.in/images/rwd/banners/vwctb/13cw/3cw-tea-2312020.jpg"
+                            alt="First slide">
+                        <img class="d-block w-100"
+                            src="https://img.dmart.in/images/rwd/banners/vwctb/13cw/1122020-3cw-brand-beardo.jpg"
+                            alt="First slide">
+                        <img class="d-block w-100"
+                            src="https://img.dmart.in/images/rwd/banners/vwctb/13cw/28feb2020-3cw-surf.jpg"
+                            alt="First slide">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carou-divimage">
+                        <img class="d-block w-100"
+                            src="https://img.dmart.in/images/rwd/banners/vwctb/13cw/28feb2020-3cw-handwash2.jpg"
+                            alt="Second slide">
+                        <img class="d-block w-100"
+                            src="https://img.dmart.in/images/rwd/banners/vwctb/13cw/28feb2020-3cw-summer.jpg"
+                            alt="First slide">
+                        <img class="d-block w-100"
+                            src="https://img.dmart.in/images/rwd/banners/vwctb/13cw/28feb2020-3cw-clothing3.jpg"
+                            alt="First slide">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carou-divimage">
+                        <img class="d-block w-100"
+                            src="https://img.dmart.in/images/rwd/banners/vwctb/13cw/28feb2020-3cw-dmartexclusive.jpg"
+                            alt="Third slide">
+                        <img class="d-block w-100"
+                            src="https://img.dmart.in/images/rwd/banners/vwctb/13cw/28feb2020-3cw-dotm2-nonfood.jpg"
+                            alt="First slide">
+                        <img class="d-block w-100"
+                            src="https://img.dmart.in/images/rwd/banners/vwctb/13cw/28feb2020-3cw-dotm3-nonfood.jpg"
+                            alt="First slide">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControl" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControl" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div>
+            <img src="https://img.dmart.in/images/rwd/banners/curated/28feb2020-mid-bigpack.jpg"
+                class="img-responsive badi-img" alt="Atta image">
+        </div>
+
+        <h2 class="some-offer">FEATURED PRODUCTS</h2>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <h4>
+                    <a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Fresh Watermelon (Tarbooj) : 1 Piece</h5>
+                        <img class="card-img-top image-responsive product-image"
+                            src="https://img.dmart.in/images/rwd/products/K/F/R/KFRESHFRUIT1pcs18XX281018_3_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Appy Fizz : 1.5 Litres</h5>
+                        <img class="card-img-top image-responsive product-image mb-4"
+                            src="https://img.dmart.in/images/rwd/products/I/S/o/ISoftDrinks1.5LAPFZ2982XX290216_1_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div></a>
+                </h4>
+            </div>
+            <div class="item">
+                <h4><a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Pears Pure & Gentle Shower Gel : 250 ml</h5>
+                        <img class="card-img-top image-responsive product-image"
+                            src="https://img.dmart.in/images/rwd/products/I/S/h/IShowerGel250mlPRS2092XX290216_9_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+
+                    </div></a>
+                </h4>
+            </div>
+            <div class="item">
+                <h4><a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Navratna Ayurvedic Oil : 300 ml</h5>
+                        <img class="card-img-top image-responsive product-image"
+                            src="https://img.dmart.in/images/rwd/products/K/H/a/KHairOil300mlHMN2614XX190417_1_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div></a>
+                </h4>
+            </div>
+            <div class="item">
+                <h4><a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Amul Lassi : 1 Litre</h5>
+                        <img class="card-img-top image-responsive product-image mb-4"
+                            src="https://img.dmart.in/images/rwd/products/K/M/I/KMILK1lAMUL62XX090418_2_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div></a>
+                </h4>
+            </div>
+            <div class="item">
+                <h4><a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Fresh Watermelon (Tarbooj) : 1 Piece</h5>
+                        <img class="card-img-top image-responsive product-image"
+                            src="https://img.dmart.in/images/rwd/products/K/F/R/KFRESHFRUIT1pcs18XX281018_3_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div></a>
+                </h4>
+            </div>
+            <div class="item">
+                <h4><a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Appy Fizz : 1.5 Litres</h5>
+                        <img class="card-img-top image-responsive product-image mb-4"
+                            src="https://img.dmart.in/images/rwd/products/I/S/o/ISoftDrinks1.5LAPFZ2982XX290216_1_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div></a>
+                </h4>
+            </div>
+            <div class="item">
+                <h4><a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Pears Pure & Gentle Shower Gel : 250 ml</h5>
+                        <img class="card-img-top image-responsive product-image"
+                            src="https://img.dmart.in/images/rwd/products/I/S/h/IShowerGel250mlPRS2092XX290216_9_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+
+                    </div></a>
+                </h4>
+            </div>
+            <div class="item">
+                <h4><a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Navratna Ayurvedic Oil : 300 ml</h5>
+                        <img class="card-img-top image-responsive product-image"
+                            src="https://img.dmart.in/images/rwd/products/K/H/a/KHairOil300mlHMN2614XX190417_1_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div></a>
+                </h4>
+            </div>
+            <div class="item">
+                <h4><a href="productpage.html">
+                    <div class="card card-height">
+                        <h5 class="card-title">Amul Lassi : 1 Litre</h5>
+                        <img class="card-img-top image-responsive product-image mb-4"
+                            src="https://img.dmart.in/images/rwd/products/K/M/I/KMILK1lAMUL62XX090418_2_P.jpg"
+                            alt="Card image cap">
+                        <div>
+                            <div class="card-body">
+                                <div>
+                                    <span class="strike-diagonal">
+                                        MRP
+                                        <strike> Rs 95.00</strike>
+                                    </span>
+                                    <p class="our-price">Our Price: Rs.59</p>
+                                </div>
+                                <p class="card-text mb-3">1 pc - Rs59.00</p>
+                                <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                        aria-hidden="true"></i>ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div></a>
+                </h4>
+            </div>
+        </div>
+
+
+
+
+        <!-- Bigbasket carousel -->
+        <div class="container sec-carou-pad">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.bigbasket.com/media/uploads/banner_images/All_SummerSale-BTS_DT_4_1130x400_11thMar.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.bigbasket.com/media/uploads/banner_images/T1_All_PetStore_DT_3_1130x400_25thFeb.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.bigbasket.com/media/uploads/banner_images/All_SummerPC_DT_6_1130x400_13thMar.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.bigbasket.com/media/uploads/banner_images/All_BabyStore_DT_2_1130x400_25thFeb.jpg"
+                            class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- Bigbasket carousel -->
+
+
+        <h2 class="some-offer">BEST SELLERS</h2>
+        <!-- Products Carousel -->
+        <div id="carouselExampleControlss" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="card-deck cdeckmargin">
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Amul Butter : 500 gms</h5>
+                            <img class="card-img-top image-responsive product-image mb-4"
+                                src="https://img.dmart.in/images/rwd/products/K/B/u/KButter500gmAMUL2622XX270417_1_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 235.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.217</p>
+                                    </div>
+                                    <p class="card-text mb-3">500gm - pc - Rs 217.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div></a>
+
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Premia Badam (Almonds) : 500 gms</h5>
+                            <img class="card-img-top image-responsive product-image"
+                                src="https://img.dmart.in/images/rwd/products/J/A/l/JAlmonds500gmPRMI2XX111116_1_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 479.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.395</p>
+                                    </div>
+                                    <p class="card-text mb-3">500 gm - Rs 395.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div></a>
+
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Amul Kool Cafe Milk : 200 ml</h5>
+                            <img class="card-img-top image-responsive product-image"
+                                src="https://img.dmart.in/images/rwd/products/I/F/l/IFlavourMilk200mlAMUL3154XX290216_1_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 25.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.53</p>
+                                    </div>
+                                    <p class="card-text mb-3">200ml - Rs23.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+
+                        </div></a>
+
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Premia Kaju : 500 gms</h5>
+                            <img class="card-img-top image-responsive product-image mb-4"
+                                src="https://img.dmart.in/images/rwd/products/K/H/a/KHairOil300mlHMN2614XX190417_1_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 584.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.436</p>
+                                    </div>
+                                    <p class="card-text mb-3">500gm - Rs436.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div></a>
+
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Fortune Sunlite Refined Sunflower Oil : 1 Litre</h5>
+                            <img class="card-img-top image-responsive product-image"
+                                src="https://img.dmart.in/images/rwd/products/I/S/u/ISunflowerOil1ltrFTN3459XX200220201127_5_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 142.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.104</p>
+                                    </div>
+                                    <p class="card-text mb-3">1 L - Rs104.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+
+                    <div class="card-deck cdeckmargin">
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Refined Sunflower Oil Tin : 15 Litres</h5>
+                            <img class="card-img-top image-responsive product-image"
+                                src="https://img.dmart.in/images/rwd/products/K/E/d/KEdibleOil15LFTN2725XX200517_1_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 2000.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.1499</p>
+                                    </div>
+                                    <p class="card-text mb-3">15 L - Rs1499.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div></a>
+
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Aashirvaad Multigrain Atta : 5 kgs</h5>
+                            <img class="card-img-top image-responsive product-image"
+                                src="https://img.dmart.in/images/rwd/products/I/M/u/IMultigrainAtta5kgASHW3538XX171220191036_5_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 305.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.273</p>
+                                    </div>
+                                    <p class="card-text mb-3">5 kg - Rs273.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div></a>
+
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Daawat Rozana Super Basmati Rice:5 kgs</h5>
+                            <img class="card-img-top image-responsive product-image"
+                                src="https://img.dmart.in/images/rwd/products/I/B/a/IBasmatiRice5kgDAWT3571XX100220_4_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 435.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.325</p>
+                                    </div>
+                                    <p class="card-text mb-3">5 kg - Rs325.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+
+                        </div></a>
+
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Satyam Khobra (Coconut) : 200 gms</h5>
+                            <img class="card-img-top image-responsive product-image"
+                                src="https://img.dmart.in/images/rwd/products/J/W/h/JWholeSpices200gmSTYM552XX311216_1_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 84.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.77</p>
+                                    </div>
+                                    <p class="card-text mb-3">200 gm - Rs77.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div></a>
+
+                        <a href="productpage.html">
+                        <div class="card card-heightt">
+                            <h5 class="card-title">Ramdev Strong Hing : 100 gms</h5>
+                            <img class="card-img-top image-responsive product-image"
+                                src="https://img.dmart.in/images/rwd/products/I/P/o/IPowderMasala100gRMDV3846XX290216_1_P.jpg"
+                                alt="Card image cap">
+                            <div>
+                                <div class="card-body">
+                                    <div>
+                                        <span class="strike-diagonal">
+                                            MRP
+                                            <strike> Rs 210.00</strike>
+                                        </span>
+                                        <p class="our-price">Our Price: Rs.180</p>
+                                    </div>
+                                    <p class="card-text mb-3">100gm - Rs180.00</p>
+                                    <a href="#" class="btn atc"><i class="fa fa-shopping-cart cart-icon"
+                                            aria-hidden="true"></i>ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <a class="carousel-control-prev control-prev" href="#carouselExampleControlss" role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next control-next" href="#carouselExampleControlss" role="button"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Products Carousel -->
+
+        <section class="offer-product">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <a href="#"><img class="img-fluid" src="https://ratnadeepretail.com/img/ad/1.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#"><img class="img-fluid" src="https://ratnadeepretail.com/img/ad/2.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-white border-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature-box">
+                            <i class="fa fa-motorcycle mdi" aria-hidden="true"></i>
+                            <h6>Available on Dunzo &amp; Swiggy</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature-box">
+                            <i class="fa fa-shopping-bag mdi" aria-hidden="true"></i>
+                            <h6>100% Satisfaction Guarantee</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature-box">
+                            <i class="fa fa-tag mdi" aria-hidden="true"></i>
+                            <h6>Great Daily Deals</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="footer-area footer--light">
+            <div class="footer-big">
+                <!-- start .container -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="footer-widget">
+                                <div class="widget-about">
+                                    <div class="mrlogodiv">
+                                        <h1 class="majisa-fs">MAJISA</h1>
+                                        <h2 class="retail-center">Retail.</h2>
+                                    </div>
+                                    <p>1st Floor, Mitti's Building, Chaitanya Enclave, Khajaguda, Hyderabad, Telangana
+                                        500075
+                                    </p>
+                                    <ul class="contact-details">
+                                        <li>
+                                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                            <a href="tel:987-654-3210">987-654-3210</a>
+                                        </li>
+                                        <li>
+                                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                            <a href="mailto:support@majisaretail.com">support@majisaretail.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Ends: .footer-widget -->
+                        </div>
+                        <!-- end /.col-md-4 -->
+                        <div class="col-md-3 col-sm-4">
+                            <div class="footer-widget">
+                                <div class="footer-menu footer-menu--1">
+                                    <h4 class="footer-widget-title">Popular Category</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="fruitsvegies">Fruits & Vegetables</a>
+                                        </li>
+                                        <li>
+                                            <a href="dairybeverages">Diary & Beverages</a>
+                                        </li>
+                                        <li>
+                                            <a href="personalcare">Personal Care</a>
+                                        </li>
+                                        <li>
+                                            <a href="grocery.html">Grocery</a>
+                                        </li>
+                                        <li>
+                                            <a href="specials.html">Specials</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- end /.footer-menu -->
+                            </div>
+                            <!-- Ends: .footer-widget -->
+                        </div>
+                        <!-- end /.col-md-3 -->
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="footer-widget">
+                                <div class="footer-menu">
+                                    <h4 class="footer-widget-title">Our Company</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="grocery.html">Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="aboutus.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- end /.footer-menu -->
+                            </div>
+                            <!-- Ends: .footer-widget -->
+                        </div>
+                        <!-- end /.col-lg-3 -->
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="footer-widget">
+                                <div class="footer-menu no-padding">
+                                    <h4 class="footer-widget-title">Help Support</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="tandc.html">Terms &amp; Conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="privacy.html">Privacy & Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="returnref.html">Refund Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="shipping.html">Shipping Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html">FAQs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- end /.footer-menu -->
+                            </div>
+                            <!-- Ends: .footer-widget -->
+                        </div>
+                        <!-- Ends: .col-lg-3 -->
+
+                    </div>
+                    <!-- end /.row -->
+                </div>
+                <!-- end /.container -->
+            </div>
+            <!-- end /.footer-big -->
+
+            <div class="mini-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright-text">
+                                <p>© 2018. All rights reserved. Created by
+                                    <a href="index.html">MAJISAretail</a>
+                                </p>
+                            </div>
+                            <!-- 
+                            <div class="go_top">
+                                <span class="icon-arrow-up"></span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- FOOTER -->
+
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

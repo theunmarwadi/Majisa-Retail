@@ -1,0 +1,123 @@
+@media(min-width: 1px) and (max-width: 480px) {
+    .title-head {
+        padding-right: 0 !important;
+    }
+
+    .cart {
+        display: none;
+    }
+
+    .order-status {
+        display: none;
+    }
+
+    .loginbtn {
+        padding: 5px 26px;
+    }
+
+    .majisa-fs {
+        font-size: 2rem;
+    }
+
+    .retail-center {
+        font-size: 1rem;
+    }
+
+    .mrhead {
+        padding-bottom: 10px;
+    }
+
+    .cdeckmargin {
+        width: unset;
+    }
+
+    .productscroll {
+        overflow: auto;
+    }
+    .product-gallery__viewport {
+        height: 150px;
+    }
+    .our-pricec, .mrp, .yousave {
+        font-size: 0.9rem;
+    }
+
+}
+
+.mob-cen {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media(min-width: 481px) and (max-width: 768px) {
+    .order-status {
+        display: none;
+    }
+
+    .loginbtn {
+        padding: 5px 15px;
+    }
+
+    .majisa-fs {
+        font-size: 2.5rem;
+    }
+
+    .retail-center {
+        font-size: 1.5rem;
+    }
+
+    .product-gallery__viewport {
+        height: 230px;
+    }
+
+
+
+
+
+}
+
+
+
+
+@media(min-width: 769px) and (max-width: 1024px) {
+    .loginbtn {
+        padding: 5px 30px;
+    }
+
+    .product-gallery__viewport {
+        height: 280px;
+    }
+
+
+}
+
+@media(min-width: 1025px) and (max-width: 1500px) {
+    .menu-list {
+        border-right: 12px solid #ff884d;
+        border-left: 12px solid #ff884d;
+    }
+
+    .hpgac {
+        border-right: 12px solid #ff884d;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        border-top: 0.5px solid #ff884d;
+        border-bottom: 0.5px solid #ff884d;
+    }
+
+    .carousel-image {
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .control-prev,
+    .control-next {
+        background-color: orange;
+        height: 20%;
+        width: 6%;
+        border-radius: 50%;
+        top: 35%;
+    }
+}
