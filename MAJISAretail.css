@@ -169,7 +169,7 @@ body {
 }
 
 .our-price {
-    font-size: larger;
+    font-size: 1.2rem;
     color: orange;
     font-weight: 700;
     font-family: 'Sen', sans-serif;
@@ -178,6 +178,7 @@ body {
 .strike-diagonal {
     color: gray;
     font-family: 'Sen', sans-serif;
+    font-size: 15px;
 }
 
 .product-image {
@@ -237,28 +238,33 @@ body {
     padding: 10px 0 0;
 }
 
-/* owlcarousel */
-.owl-nav {
-    margin-top: 10px;
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
+/* Tiny slider */
+.tns-controls {
     position: absolute;
-    bottom: 50%;
+    bottom: 58%;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+.tns-outer button{
+    display: none;
+}
+.tns-controls,.tns-controls button{
+    display: flex;
+}
 
-.owl-prev,
-.owl-next {
+.tns-controls button{
     width: 40px;
     height: 40px;
     background-color: orange !important;
+    color: white;
+    justify-content: center;
 }
 
-/* owlcarousel */
+/* Tiny slider */
 .card-height {
     height: 417px;
+    margin-right: 4%;
 }
 .card-heightt {
     height: 412px;
@@ -747,8 +753,7 @@ a:focus, a:active, a:link {
 /* GALLERY */
 .city-name {
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 45%;
     color: white;
     font-family: 'Akronim', cursive;
     font-size: 30px;

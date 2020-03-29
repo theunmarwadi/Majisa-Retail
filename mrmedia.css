@@ -40,6 +40,9 @@
     .our-pricec, .mrp, .yousave {
         font-size: 0.9rem;
     }
+    .tns-controls {
+        bottom: 77%;
+    }
 
 }
 
@@ -88,7 +91,9 @@
     .product-gallery__viewport {
         height: 280px;
     }
-
+    .tns-controls {
+        bottom: 53%;
+    }
 
 }
 
